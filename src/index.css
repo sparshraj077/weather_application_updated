@@ -130,3 +130,145 @@ body.dark .city-search {
 body.dark .city-search::placeholder {
     color: #bbb;
 }
+
+
+body.full-background {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.App {
+    width: 90%;
+    max-width: 600px;
+    margin: 64px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.top-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.city-search {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 16px;
+    font-size: 16px;
+    outline: none;
+    background-color: #e5eef0;
+    color: #333;
+}
+
+.search-button {
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #1565c0;
+}
+
+.city-name {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.date {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #777;
+}
+
+.icon-temp {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1e2432;
+}
+
+.deg {
+    font-size: 1.3rem;
+    vertical-align: super;
+}
+
+.des-wind {
+    font-weight: 500;
+    color: #666;
+}
+
+.error-message {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.Loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark .App {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .city-search {
+    background-color: #333;
+    border-color: #666;
+    color: #fff;
+}
+
+body.dark .city-search::placeholder {
+    color: #bbb;
+}
+
+@media (max-width: 600px) {
+    .city-search {
+        width: 80vw;
+        font-size: 14px;
+    }
+
+    .search-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .icon-temp {
+        font-size: 2rem;
+    }
+}
